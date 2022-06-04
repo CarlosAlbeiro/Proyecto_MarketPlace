@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Publicar">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="600.0" style="-fx-background-color: #fffff;">
+               <children>
+                  <TextField fx:id="Tex_nombre" layoutX="27.0" layoutY="26.0" prefHeight="34.0" prefWidth="290.0" promptText="Codigo" />
+                  <TextField fx:id="Tex_apellidos" layoutX="27.0" layoutY="72.0" prefHeight="34.0" prefWidth="291.0" promptText="Nombre" />
+                  <TextField fx:id="Tex_contrase" layoutX="27.0" layoutY="121.0" prefHeight="34.0" prefWidth="292.0" promptText="Precio" />
+                  <Button fx:id="But_volver" layoutX="402.0" layoutY="352.0" mnemonicParsing="false" onAction="#eventoVolver" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #FB6E53; -fx-background-radius: 100;" text="Volver">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="But_regis" layoutX="173.0" layoutY="352.0" mnemonicParsing="false" onAction="#eventoRegistrar" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: #52FAB8; -fx-background-radius: 100;" text="Registrar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="234.0" fitWidth="213.0" layoutX="360.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Imagenes/Negro_Rojo_eSports_Ilustrativo_Gaming_Videojuegos_Logotipo-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="Tex_contrase1" layoutX="27.0" layoutY="172.0" prefHeight="34.0" prefWidth="292.0" promptText="Categoria" />
+               </children>
+            </AnchorPane>
+         </content>
+    </Tab>
+    <Tab text="Perfil">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="45.0" layoutY="14.0" text="Datos del vendedor:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="14.0" layoutY="43.0" prefHeight="3.0" prefWidth="417.0" />
+                  <TextField layoutX="45.0" layoutY="72.0" />
+                  <TextField layoutX="255.0" layoutY="72.0" />
+                  <TextField layoutX="45.0" layoutY="138.0" />
+                  <Label layoutX="45.0" layoutY="51.0" text="Nombre:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="255.0" layoutY="51.0" text="Apellidos:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="45.0" layoutY="117.0" text="Cedula:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="255.0" layoutY="136.0" />
+                  <Label layoutX="255.0" layoutY="115.0" text="Direccion:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="45.0" layoutY="204.0" />
+                  <Label layoutX="45.0" layoutY="183.0" text="Usuario:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="255.0" layoutY="202.0" />
+                  <Label layoutX="255.0" layoutY="181.0" text="Contraseña:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="14.0" layoutY="239.0" prefHeight="7.0" prefWidth="419.0" />
+                  <Button layoutX="45.0" layoutY="295.0" mnemonicParsing="false" text="Actualizar" />
+                  <Label layoutX="50.0" layoutY="259.0" text="Actualizar datos:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Contactos">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="489.0" prefWidth="511.0">
+               <children>
+                  <Label layoutX="128.0" layoutY="14.0" text="Chat:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="128.0" layoutY="45.0" prefHeight="279.0" prefWidth="344.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="326.0" />
+                    </content>
+                  </ScrollPane>
+                  <Button layoutX="401.0" layoutY="358.0" mnemonicParsing="false" text="Enviar" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Sugerencias">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="42.0" layoutY="124.0" mnemonicParsing="false" text="Buscar" />
+                  <Button layoutX="124.0" layoutY="124.0" mnemonicParsing="false" text="Agregar " />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Inicio">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutX="14.0" layoutY="14.0" prefHeight="446.0" prefWidth="563.0">
+                     <columns>
+                        <TableColumn prefWidth="117.0" text="Nombre Vendedor " />
+                        <TableColumn minWidth="2.0" prefWidth="56.0" text="Codigo" />
+                        <TableColumn minWidth="0.0" prefWidth="14.0" text="Categori" />
+                        <TableColumn prefWidth="72.0" text="Precio" />
+                        <TableColumn prefWidth="116.0" text="Comentario" />
+                        <TableColumn prefWidth="55.0" text="Reaccion" />
+                        <TableColumn prefWidth="75.0" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
